@@ -360,6 +360,32 @@
    .container{
     width: 375px;
    }
+
+
+   .row{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 18px !important;
+
+   }
+
+
+
+   .what {
+   display: none;
+    
+ }
+    .what img{ 
+        display: none;
+    }
+
+    .local{
+        display: none;
+    }
+    .video{
+       display: none;
+    }
 }
     
    
