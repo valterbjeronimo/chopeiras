@@ -317,3 +317,47 @@
 .margin_top_90 {
     margin-top: 90px;
 }
+.bannerMobile{
+    display: none;
+}
+
+
+@media (min-width: 375px) and (max-width: 680px) {
+
+    .header-principal {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        border: solid 1px white;
+        background-color: #F59F00;
+        position: relative;
+        
+    }
+
+    .header-principal  h5 {
+       
+        display: none;
+
+    }
+
+    .logo {
+       
+        display: flex;
+        margin-left: 210px;
+    }
+    
+    .bannerMobile {
+        display: flex;
+        justify-content: center;
+       
+       
+    }
+
+
+   #carouselExampleIndicators{
+    display: none !important;
+   }
+}
+    
+   
+
