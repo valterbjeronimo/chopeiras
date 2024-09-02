@@ -338,6 +338,73 @@
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
+.text-efeito{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    font-weight: 600;
+}
+.text-efeito span{
+    position: relative;
+    font-size: 30px;
+}
+.text-efeito span::before {
+    content: "";
+    animation: palavras 600s infinite; /* Duração aumentada para 40s */
+ }
+ 
+ .text-efeito span::after {
+     content: "";
+     position: absolute;
+     margin-top: 8px;
+     height: 100%;
+     border-left: 2px solid black;
+     right: -10px;
+     opacity: 1;
+     animation: cursor 0.5s infinite, digita 40s steps(15) infinite; /* Cursor mais lento (0.5s) e digitação mais lenta (2s) */
+     width: 97%;
+     background-color: #FFFCF1 ;
+ }
+
+@keyframes digita {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{width: 0
+    
+    ;}
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width:97%;
+    }
+}
+
+@keyframes cursor {
+    0%{
+        background-color: #FFFCF1 ;
+    }
+}
+@keyframes palavras{
+    /* 0%, 50%{
+        content: "O melhor Para Sua Festa";
+    }
+    51%, 100%{
+        content: "O melhor Para Sua Festa";
+    } */
+    0%,25%{
+        content: "O melhor Para Sua Festa !";
+    }
+    26%,50%{
+        content: "O melhor Para Sua Festa !";
+    }
+    51%,75%{
+        content: "O melhor Para Sua Festa !";
+    }
+    76%,100%{
+        content: "O melhor Para Sua Festa !";
+    }
+}
+
+
+
+
 @keyframes flutuar {
     0% {
         top: 0;
