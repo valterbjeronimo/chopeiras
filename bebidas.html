@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" href="img/CHOPP & CHOPEIRA (2).png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
@@ -79,11 +79,11 @@
 
     <h1 class="titulo-vontainer"> Escolha Sua Bebida</h1>
 
-      <div class="container">
+      <div class="container ">
 
         
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3  efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_1.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -94,7 +94,7 @@
                 </div>
             </div>
     
-            <div class="col-md-3">
+            <div class="col-md-3  efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_2.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -106,7 +106,7 @@
                 </div>
             </div>
     
-            <div class="col-md-3">
+            <div class="col-md-3  efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_3.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -117,7 +117,7 @@
                 </div>
             </div>
     
-            <div class="col-md-3">
+            <div class="col-md-3  efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_4.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -129,7 +129,7 @@
                 </div>
             </div>
     
-            <div class="col-md-3">
+            <div class="col-md-3  efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_5.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -140,7 +140,7 @@
                 </div>
             </div>
     
-            <div class="col-md-3 ">
+            <div class="col-md-3  efeito ">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_6.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -151,7 +151,7 @@
                 </div>
             </div>
     
-            <div class="col-md-3 ">
+            <div class="col-md-3 efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_7.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -162,7 +162,7 @@
                 </div>
             </div>
     
-            <div class="col-md-3 ">
+            <div class="col-md-3 efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_8.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -174,7 +174,7 @@
             </div>
 
 
-            <div class="col-md-3 ">
+            <div class="col-md-3 efeito">
                 <div class="card " style="width: 18rem;">
                     <img src="img/b_9.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -185,7 +185,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 ">
+            <div class="col-md-3 efeito">
                 <div class="card  " style="width: 18rem;">
                     <img src="img/b_10.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -195,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_11.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -205,7 +205,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3  efeito">
                 <div class="card" style="width: 18rem;">
                     <img src="img/b_12.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -279,7 +279,27 @@
 
     
 
-     <script src="js/main.js">     
+     <script > 
+         
+            document.addEventListener("DOMContentLoaded", function() {
+                const hamburger = document.querySelector('.hamburger');
+                const dropdown = document.querySelector('.dropdow');
+            
+                hamburger.addEventListener('click', function() {
+                    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+                        dropdown.style.display = "flex"; // Exibe o dropdown
+                    } else {
+                        dropdown.style.display = "none"; // Esconde o dropdown
+                    }
+                });
+            });   
+
+            window.revelar = ScrollReveal({ reset: true });
+            revelar.reveal('.efeito', {
+                duration: 2000,
+                distance: '90px'
+            });
+         
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

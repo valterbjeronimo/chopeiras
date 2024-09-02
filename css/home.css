@@ -416,6 +416,12 @@
 
 
 
+.card:hover {
+    transform: scale(1.10); 
+    cursor: pointer;
+}
+
+
 @media (min-width: 375px) and (max-width: 680px) {
 
     .header-principal {
