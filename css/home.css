@@ -141,6 +141,10 @@
     margin-top: 30px;
 }
 
+.card-bebidas{
+    display: none;
+}
+
 .btn-primary{
     background-color: green !important;
     width: 100%;
@@ -150,6 +154,7 @@
     bottom: 30px;
     right: 30px;
     z-index: 9999;
+    right: 5px;
     
 }
 .what img{
@@ -336,6 +341,13 @@
         position: relative;
         
     }
+    
+    .card-4{
+        display: none !important;
+    }
+    .card-bebidas{
+        display: flex;
+    }
 
     .header-principal  h5 {
        
@@ -373,15 +385,26 @@
 
    }
 
-
+   /* .dropdow-show-chopp{
+    display: flex;
+    width: 100%;
+    background-color: #fcfcfc;
+    background: url("/img/drop.png");
+   } */
 
    .what {
-   display: none;
-    
+    display: flex;
+    position: fixed;
+    width: 45px;
+    height: 45px;
  }
-    .what img{ 
-        display: none;
-    }
+ 
+ .what img { 
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem, cobrindo completamente a div */
+ }
 
     .local{
         display: flex;
@@ -394,6 +417,12 @@
         display: block;
         width: 100%;
     }
+
+    .copyright_section{
+        display: none;
+    }
+
+
 }
     
    
