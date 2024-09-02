@@ -48,7 +48,10 @@
     margin-top: 40px;
 }
 
-
+.icon-bebidas{
+    width: 30px;
+    height: 30px;
+}
 
 
 .links{
@@ -104,8 +107,8 @@
     display: flex;
     background-color:#F59F00 ;
     color: black;
-    height: 500px;
-    gap: 350px;
+    height: 300px;
+    
 }
 .dropdow-lista{
     display: flex;
@@ -164,7 +167,7 @@
     justify-content: center;
     padding: 30px;
 }
-.video{
+.video-container{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -366,7 +369,7 @@
 
     display: flex;
     justify-content: center;
-    margin-left: 18px !important;
+    margin-left: 25px !important;
 
    }
 
@@ -381,10 +384,15 @@
     }
 
     .local{
-        display: none;
+        display: flex;
     }
-    .video{
-       display: none;
+    .video-container{
+      display: none;
+    }
+
+    .videocc{
+        display: block;
+        width: 100%;
     }
 }
     
