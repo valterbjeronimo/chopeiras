@@ -35,3 +35,15 @@ document.addEventListener("DOMContentLoaded", function() {
         video.pause();
     });
 });
+
+
+
+
+// Verifica a resposta do usuário e redireciona ou fecha o modal
+document.getElementById('yesButton').addEventListener('click', function() {
+    document.getElementById('ageModal').style.display = '';
+});
+
+document.getElementById('noButton').addEventListener('click', function() {
+    window.location.href = "https://www.google.com";  // Redireciona para outro site
+});

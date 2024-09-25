@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-principal">
+
+        <div id="hamburger" class="hamburger" onclick="clickMenu"><img src="img/list.svg" alt=""><h5>MENU</h5></div>
+
+        <!-- <div class="form-search">
+            <label for="search-input"></label>
+            <input type="text" id="search-input" placeholder="Oque voce Procura ?" class="vtr">
+            <button><img src="img/search.png" alt="search" class="img-icon"></button>
+        </div> -->
+
+
+        
+
+        <div class="logo"><a href="index.html"><img src="img/CHOPP & CHOPEIRA (2).png" alt=""></a></div>
+
+        <div class="links">
+            <div><a href="index.html"><h5>HOME |</h5></a></div>
+            <div><a href="carrinho.html"><h5>ABOUT</h5></a></div>
+             
+        </div>
+
+        
+        
+        
+
+    </header>
+
+    <div  id="dropdow" class="dropdow">
+
+        <div class="dropdow-lista">
+            <div class="dropdow-lista-categoria">
+               <img class="icon-bebidas" src="img/barril.png" alt="">
+              <a href="chop.html"><button><img src="" alt="">CHOPP</button></a>
+            </div>
+
+            <div class="dropdow-lista-categoria">
+              <img class="icon-bebidas" src="img/bebida1.png" alt="">
+              <a href="bebidas.html"><button>BEBIDAS</button></a></div>
+
+            <div class="dropdow-lista-categoria">
+              <img class="icon-bebidas" src="img/chopeira2.png" alt="">
+              <a href="chop.html"><button>CHOPEIRAS</button></a>
+            </div>
+
+            <div class="dropdow-lista-categoria">
+              <img class="icon-bebidas" src="img/festa.png" alt="">
+              <a href="suafesta.html"><button>SUA FESTA</button></a>
+            </div>
+
+        </div>
+
+
+        <div class="dropdow-show-chopp">
+            <div class="cards-view">
+
+            </div>
+            
+
+        </div>
+
+
+
+
+    </div>
+
+    <main>
+
+        <div class="page-title"> Seu Carrinho </div>
+        <div class="content">
+            <section>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                        <td>
+                            <div class="product">
+                                <img src="https://picsum.photos/100/120" alt="">
+                                <div class="ifo">
+                                    <div class="name">nome do Produto </div>
+                                <div class="category">Categoria</div>
+                                </div>
+                                
+
+                            </div>
+                        </td>
+                        <td>R$120,00</td>
+                        <td>
+                            <div class="qty">
+                                <button><i class='bx bx-minus'></i></button>
+                                <span>2</span>
+                                <button><i class='bx bx-plus'></i></button>
+
+                            </div>
+                        </td>
+
+                        <td>R$240,00</td>
+                        <td><button class="remove"><i class='bx bx-x'></i></button></td>
+                     </tbody>
+                    </tr>
+                      
+
+                </table>
+
+            </section>
+            <aside>
+                <div class="box">
+                    <header></header>
+                    <div class="ifo">
+                        <div><span>sub-total</span><span>R$418</span></div>
+                        <div><span>frete</span><span>gratuito</span></div>
+                        <div><span>sub-total</span><span>R$418</span></div>
+                        <div><button>adicionar cupom de desconto <i class='bx bx-right-arrow-alt' ></i></button></div>
+                        
+
+                    </div>
+                    <footer></footer>
+
+                    <button>Finalizar Compra</button>
+                </div>
+                
+            </aside>
+        </div>
+    </main>
+    
+    
+</body>
+</html>
