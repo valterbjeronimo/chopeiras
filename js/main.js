@@ -38,12 +38,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-// Verifica a resposta do usuário e redireciona ou fecha o modal
+// Função para esconder o modal quando o usuário clicar em "SIM"
 document.getElementById('yesButton').addEventListener('click', function() {
-    document.getElementById('ageModal').style.display = '';
+    document.getElementById('ageModal').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Permitir rolagem após fechar o modal
 });
 
+// Função para redirecionar o usuário quando ele clicar em "NÃO"
 document.getElementById('noButton').addEventListener('click', function() {
-    window.location.href = "https://www.google.com";  // Redireciona para outro site
+    window.location.href = "https://www.google.com"; // Redireciona para outro site
 });
+
+// Impedir a rolagem do site enquanto o modal estiver ativo
+window.onload = function() {
+    document.body.style.overflow = 'hidden';
+};
+
