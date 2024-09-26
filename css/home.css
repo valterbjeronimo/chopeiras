@@ -1,5 +1,143 @@
 @import url(main.css);
 
+/* Estilos para o container de cookies */
+.cookie-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e0ecff;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.cookie-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.cookie-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.cookie-content p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.cookie-content a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cookie-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cookie-btn.accept {
+    background-color: #0066cc;
+    color: white;
+}
+
+.cookie-btn.manage {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.cookie-btn:hover {
+    opacity: 0.8;
+}
+/* Estilo do modal */
+.modall {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 20%;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.modal-content h2 {
+    color: #ccc;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.modal-content p {
+    color: #ccc;
+   font-size: 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#noButton {
+    background-color: #ccc;
+}
+
+#yesButton {
+    background-color: #007bff;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .header-principal{
     height: 120px;
@@ -513,39 +651,31 @@
     .copyright_section{
         display: none;
     }
+    .modall {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        left: 10%;
+        top: 40%;
+        width: 350px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
-
-}
     
-   
-
-/* Estilos básicos do site */
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Estilo do modal */
-.modal {
-    display: block;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .modal-content {
+   
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    height: 100%;    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -555,10 +685,14 @@ body {
 }
 
 .modal-content h2 {
+    color: #ccc;
     font-size: 18px;
     margin: 20px 0;
 }
-
+.modal-content p {
+    color: #ccc;
+   font-size: 20px;
+}
 .buttons {
     display: flex;
     justify-content: space-around;
@@ -580,4 +714,16 @@ button {
 #yesButton {
     background-color: #007bff;
     color: white;
+}
+
+
+
+
+}
+    
+   
+
+/* Estilos básicos do site */
+body {
+    font-family: Arial, sans-serif;
 }

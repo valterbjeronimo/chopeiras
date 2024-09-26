@@ -54,3 +54,32 @@ window.onload = function() {
     document.body.style.overflow = 'hidden';
 };
 
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cookieConsent = document.getElementById('cookie-consent');
+    const acceptButton = document.getElementById('accept-cookies');
+    const manageButton = document.getElementById('manage-cookies');
+
+    // Ocultar o banner de cookies após a aceitação
+    acceptButton.addEventListener('click', function() {
+        cookieConsent.style.display = 'none';
+        localStorage.setItem('cookiesAccepted', 'true');
+    });
+
+    // Simulação de gerenciamento de cookies (pode adicionar funcionalidades)
+    manageButton.addEventListener('click', function() {
+        alert('Gerenciar cookies ainda não está implementado.');
+    });
+
+    // Verificar se o consentimento já foi dado
+    if (localStorage.getItem('cookiesAccepted') === 'true') {
+        cookieConsent.style.display = 'none';
+    }
+});
